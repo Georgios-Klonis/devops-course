@@ -12,7 +12,16 @@ def index():
 @app.route('/resume.pdf')
 def resume_pdf():
     # serve the attached PDF if present in the project root
-    return send_from_directory(os.path.dirname(__file__), 'resume.pdf')
+    # serve the attached PDF from the `resources` directory
+    resources_dir = os.path.join(os.path.dirname(__file__), 'resources')
+    return send_from_directory(resources_dir, 'resume.pdf')
+
+
+@app.route('/resources/<path:filename>')
+def resources_file(filename):
+    """Serve files from the resources directory (e.g., /resources/resume.pdf)."""
+    resources_dir = os.path.join(os.path.dirname(__file__), 'resources')
+    return send_from_directory(resources_dir, filename)
 
 
 if __name__ == '__main__':

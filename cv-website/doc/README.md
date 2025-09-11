@@ -35,6 +35,7 @@ python app.py
 
 Notes
 - The project will serve `resume.pdf` if present at the repository root. It's already included in this workspace.
+ - The project will serve `resume.pdf` from the `resources/` directory. It's already included in this workspace.
 - Change `app.run(..., debug=True)` to `False` when not developing.
 
 Run without virtualenv (quick)

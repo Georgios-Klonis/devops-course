@@ -10,6 +10,7 @@ This file lists concise, repeatable developer steps to produce and host your res
 - Sign in to LinkedIn and open your profile (`linkedin.com/in/georgios-klonis`).
 - Use the "More" → "Save to PDF" (or browser Print → Save as PDF) to download your profile/resume as a PDF.
 - Save the file to the project root as `resume.pdf` (path: `/Users/georgiosklonis/cv/resume.pdf`).
+ - Save the file to the project `resources/` directory as `resume.pdf` (path: `/Users/georgiosklonis/dev/github/devops-course/cv-website/resources/resume.pdf`).
 
 
 2) Use chat to convert PDF to text
